@@ -11,11 +11,17 @@ if __name__ == "__main__":
     # Streamlit will automatically listen on port 8501 by default
 
 
-# Load the trained model
-model = joblib.load('C:/Users/nikam/OneDrive/Desktop/mlops-interactive-project/app/iris_model.pkl')
+# Load model from a relative path
+model_path = os.path.join('app', 'iris_model.pkl')
+model = joblib.load(model_path)
 
 # Set up the app interface
 st.title("🌸 Interactive MLOps App: Iris Flower Prediction")
+
+
+# Load model from a relative path
+model_path = os.path.join('app', 'iris_model.pkl')
+model = joblib.load(model_path)
 
 # Sidebar inputs
 st.sidebar.header("Input Features")
