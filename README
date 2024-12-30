@@ -1,0 +1,25 @@
+# Interactive MLOps Project: Iris Flower Prediction 🌸
+
+This project demonstrates a complete MLOps pipeline, featuring:
+- **Model Training**: A decision tree classifier trained on the Iris dataset.
+- **Interactive Web App**: Built with Streamlit, allowing real-time user input and predictions.
+- **Deployment**: Dockerized and deployed on the cloud for scalability.
+- **Monitoring**: Prometheus and Grafana for real-time metrics.
+
+## Features
+- User-friendly sliders for inputting features.
+- Real-time predictions and probability visualizations.
+- Metrics for monitoring API performance.
+
+## Workflow
+1. **Model Development**: Trained a decision tree classifier using scikit-learn.
+2. **Interactive App**: Built a web app to serve predictions and visualize results.
+3. **Containerization**: Packaged the app with Docker for easy deployment.
+4. **Cloud Deployment**: Deployed on [Streamlit Cloud/Google Cloud/AWS] for accessibility.
+5. **Monitoring**: Integrated Prometheus to track requests and response times.
+
+## How to Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo/mlops-interactive.git
+   cd mlops-interactive
