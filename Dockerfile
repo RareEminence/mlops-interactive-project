@@ -9,6 +9,7 @@ COPY app/iris_model.pkl /app/iris_model.pkl
 COPY requirements.txt /app
 
 # Install dependencies
+RUN apt-get update && apt-get install -y zlib1g-dev libjpeg-dev libpng-dev
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose Streamlit's default port
