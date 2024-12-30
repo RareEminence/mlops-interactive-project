@@ -5,14 +5,26 @@ import pandas as pd
 from sklearn.datasets import load_iris
 
 
-if __name__ == "__main__":
-    import streamlit as st
-    st.set_page_config(page_title="Interactive MLOps App", layout="centered")
-    # Streamlit will automatically listen on port 8501 by default
+# if __name__ == "__main__":
+#     import streamlit as st
+#     st.set_page_config(page_title="Interactive MLOps App", layout="centered")
+#     # Streamlit will automatically listen on port 8501 by default
 
 
-# Load model from a relative path
-model_path = os.path.join('app', 'iris_model.pkl')
+# # Load model from a relative path
+# model_path = os.path.join('app', 'iris_model.pkl')
+# model = joblib.load(model_path)
+
+# # Set up the app interface
+# st.title("🌸 Interactive MLOps App: Iris Flower Prediction")
+
+# Get the current working directory
+current_dir = os.getcwd()
+
+# Use relative path to the model within the app folder
+model_path = os.path.join(current_dir, 'app', 'iris_model.pkl')
+
+# Load the trained model
 model = joblib.load(model_path)
 
 # Set up the app interface
